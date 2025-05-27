@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css'; // Make sure App.css is imported in your main app or layout
+import '../App.css'; 
 
 function History() {
-  const appointments = []; // Currently no history
+  const appointments = []; 
 
   return (
     <div className="history-container">

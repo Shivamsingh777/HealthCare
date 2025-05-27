@@ -74,8 +74,6 @@ const SevenDayCalendar = () => {
           </div>
         ))}
       </div>
-
-      {/* 👇 Static Detailed Appointments Below Calendar */}
       <div className="detailed-appointment">
         <div className='appointments'>
         <div className="appointment-card1">

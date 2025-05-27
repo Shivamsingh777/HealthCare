@@ -3,7 +3,7 @@ import React from "react";
 const HealthStatusCards = () => {
   const healthData = [
     { id: 1, name: "Lungs", date: "2022-01-01", percent: 90 },
-    { id: 2, name: "Teeth", date: "2022-01-15", percent: 45 },  // red
+    { id: 2, name: "Teeth", date: "2022-01-15", percent: 45 },
     { id: 3, name: "Bone", date: "2022-02-01", percent: 75 },
   ];
 
@@ -14,7 +14,7 @@ const HealthStatusCards = () => {
   style={{ marginTop: '5px', display: 'inline-block' }}
 ></i></span>
       {healthData.map(({ id, name, date, percent }) => {
-        const barColor = percent < 60 ? "#e74c3c" /* red */ : "#4caf50" /* green */;
+        const barColor = percent < 60 ? "#e74c3c" : "#4caf50" ;
         return (
           <div key={id} className="health-status-card">
             <div className="first">

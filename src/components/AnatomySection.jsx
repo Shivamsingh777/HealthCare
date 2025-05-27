@@ -2,10 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const indicators = [
-     { label: 'Teeth', top: '12%', left: '76%', status: 'issue' },
-//   { label: 'Healthy Heart', top: '22%', left: '28%', status: 'healthy' },
-//   { label: 'Lungs', top: '33%', left: '32%', status: 'healthy' },
-//   
+     { label: 'Teeth', top: '12%', left: '76%', status: 'issue' },  
 { label: 'Bone', top: '68%', left: '28%', status: 'healthy' },
 ];
 
