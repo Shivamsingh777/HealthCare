@@ -1,0 +1,428 @@
+*{
+  box-sizing: border-box;
+  font-style: normal !important; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+  background-color: rgb(210, 210, 237);
+  
+}
+.app{
+  margin: 12px;
+  background-color: white;
+  border-radius: 26px;
+  height: 97vh;
+  width: 98%;
+  overflow: hidden;    
+  box-sizing: border-box;
+}
+.app-content {
+  display: flex;
+  margin: 12px;
+
+}
+.sidebar {
+  display: flex;
+  width: 200px;
+  padding: 12px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard-overview{
+  display: flex;
+}
+.general {
+  margin-bottom: 40px;
+}
+
+.sidebar-general {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 26px 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.setting {
+  margin-top: 126px;
+}
+.header {
+  width: 100%;
+  height: 15vh;
+  background-color: #f2f3f7;
+  color: gray;
+  padding: 20px  40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px 20px 0 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(7, 7, 75);
+}
+
+.health {
+  color: rgb(7, 204, 204);
+}
+
+.search-bar {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: white;
+  width: 450px;
+  font-size: 14px;
+  outline: none;
+}
+
+.add-btn {
+  font-size: 20px;
+  background-color: rgb(7, 7, 75);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.notification-icon {
+  font-size: 20px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.avatarName{
+  color: rgb(7, 7, 76);
+}
+.Dashboard{
+ font-weight: 700;
+ color: rgb(7, 7, 75);
+}
+.anatomy-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.anatomy-wrapper {
+  position: relative;
+  width: 300px;
+}
+.indicator {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 4px 10px;
+  font-size: 12px;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.indicator.healthy {
+  background-color: green;
+}
+
+.indicator.issue {
+  background-color: red;
+}
+
+.health-status-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f4f7;
+  border-radius: 10px;
+  width: 253px;
+  height: 115px;
+  margin: 12px 40px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.anatomy-image{
+  height: 350px;
+  width: 300px;
+}
+.health-status-card .first {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.progress-bar-container {
+  background: #ddd;
+  border-radius: 10px;
+  height: 12px;
+  width: 89%;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  
+  transition: width 0.5s ease;
+  border-radius: 10px 0 0 10px;
+}
+
+.percent-label {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #555;
+}
+.dashboard-main{
+  display: flex;
+}
+.dashboard-main-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.dashboard2 {
+  padding: 0 12px;
+  margin-top: -5px;
+  border-radius: 26px;
+  height: 80vh;
+  background-color: #f2f3f7;;
+}
+.seven-day-calendar {
+  padding: 5px;
+  border-radius: 12px;
+  width: 600px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendar-header button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.calendar-header button:hover {
+  background-color: #0056b3;
+}
+.calendar-grid-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.calendar-cell {
+  background-color: #e7e9f7;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+  height: 130px;
+  width: 60px;
+}
+.appointment-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  font-size: 13px;
+  color: rgb(42, 42, 197);;
+}
+.detailed-appointment {
+  margin-top: 20px;
+
+}
+.detailed-appointments {
+  margin-top: 12px;
+
+}
+h4{
+  padding-left: 12px;
+  color: rgb(7, 7, 75);
+}
+.b {
+  margin-bottom: 5px;
+  font-weight: 500;
+  padding-left: 12px;
+}
+.appointment {
+  margin-top: -15px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  gap: 15px;
+}
+.appointments {
+  margin-top: -12px;
+  display: flex;
+  padding: 2px;
+  gap: 25px;
+}
+.appointment1{
+  display: flex;
+  margin-top: -12px;
+  gap: 25px;
+}
+.appointment-card {
+  font-size: small;
+  background-color: #d0cdeb;
+  border-radius: 26px;
+  width: 270px;
+  height: 80px;
+  padding-left: 20px;
+}
+.appointment-card1 {
+  font-size: small;
+  background-color: #483cb6;
+  border-radius: 26px;
+  width: 250px;
+  height: 80px;
+  padding-left: 20px;
+}
+.appointment-card2 {
+  font-size: small;
+  background-color: #d0cdeb;
+  border-radius: 26px;
+  width: 300px;
+  height: 80px;
+  padding-left: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  
+}
+.nav-link.active {
+  color: rgb(7, 7, 76);
+  font-weight: bold;
+}
+.activity-container {
+  width: 97%;
+  box-sizing: border-box;
+  margin-top: -23px;
+  background-color: #f2f3f7;
+  padding: 12px;
+  border-radius: 26px;
+}
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem 0.5rem;
+}
+
+.activity-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color:rgb(7, 7, 75);
+}
+
+.activity-summary {
+  font-size: 0.875rem;
+  color: #6b7280; 
+}
+
+
+.activity-graph {
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+.activity-bars {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.activity-day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar-group {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  height: 120px;
+  width: 100%;
+}
+.bar {
+  width: 6px;
+  border-radius: 9999px;
+}
+
+.primary {
+  background-color: #14b8a6;
+}
+
+.secondary {
+  background-color: #6366f1;
+}
+
+.tertiary {
+  background-color: #d1d5db;
+}
+
+.day-label {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+.week{
+  display: flex;
+  justify-content: end;
+  padding-right: 54px;
+  font-size: medium;
+  font-weight: 500;
+}
+.details{
+  display: flex;
+  justify-content: end;
+  padding-right: 54px;
+  margin-top: -7px;
+  font-size: medium;
+  font-weight: 500;
+  gap: 7px;
+}
